@@ -1,0 +1,104 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<title>Test Page</title>
+<style>
+@font-face{font-family:cat;src: url(font/CATLinz_1.8.ttf);}
+@font-face{font-family:mar;src: url(font/MarckScript-Regular.ttf);}
+@font-face{font-family:mod;src: url(font/moderne_fette_schwabacherc.ttf);}
+*{margin:0;padding:0;}
+a{text-decoration:none;}
+.fl_l{float:left}.fl_r{float:right}
+.cl::after{clear:both;content:"";display:table;}
+[class^="qi"]{background-image:url(images/ddf.png);content:"";display:table;}
+	/* block 1
+		[class$="Logo"]{background-position:0 0;width:80px;height:80px;line-height:80px;position:relative;top:10px;left:10px;}
+		header ul{list-style-type:none;position:absolute;top:20px;left:80px;width:920px;}
+		header ul>li{float:left;}
+		header ul>li>a{color:#610901;font-weight:700;}
+		header ul>li>a:hover{color:#476228;}
+		header>div>div{font-family:cat;font-size:13pt;letter-spacing:.5px;color:#610901;position:absolute;top:70px;left:105px;cursor:default;}
+		header>div>section{position:relative;top:500px;}
+		#top>h2{font-family:mar;text-align:center;}
+		#top>.soc>a{width:40px;height:40px;float:right;}*/
+		html{background-color:#000;}
+	/* Head */
+		header{background:url(images/background_top.jpg) top center;padding-bottom:120px;}
+		[class$="TopLine"]{background-position:center top;background-repeat:repeat-x;width:100%;height:9px;}
+		.qt{width:1000px;margin:0 auto;}
+		.qt>ul{list-style-type:none;position:absolute;width:1000px}
+		.qt>ul>li:not(.fl_r){float:left;}
+		.qt>ul>li{padding:10px;font-family:cat;font-size:14pt;text-transform:uppercase;letter-spacing:.5px;}
+		.qt>ul>li:first-child{padding-left:0}.qt>ul>li:last-child{padding-right:0}
+		.qt>ul>li>a{color:#fbeeea;}
+		.qt>ul>li:first-child>a{color:#516230;}
+		
+		.qTitle{color:#541103;font-family:cat;text-align:center;}
+		.qTitle>h1{font-size:33.5pt;font-weight:400;}
+		.qTitle>span{font-size:13.5pt;}
+		
+		.qTake{width:680px;height:140px;margin:65px auto;background:rgba(255,255,255,.2);padding:10px;color:#511c1a;}
+		.qTake>img{width:140px;height:140px;position:absolute;}
+		.qTake>div{margin-left:160px;}
+		.qTake h3{font-size:18pt;text-transform:uppercase;font-family:cat;letter-spacing:2px;}
+		.qTake p{font-family:Ubuntu;font-size:11pt;line-height:24px;letter-spacing:.5px;}.qTake p[bold]{font-weight:700;text-transform:uppercase;}
+		
+	/* Main */
+	
+		#main{background-color:#FFEFEA;height:500px;margin-top:-44px;}
+		
+		.lace-top{background:url(images/lace_top.png) repeat-x;width:100%;height:81px;margin-top:-81px;}
+		.lace-bot{background:url(images/lace_bottom.png) repeat-x;width:100%;height:100px;margin-top:-1px;}
+		#logos{
+			background:url(images/logo.png) center center no-repeat #FFEFEA;
+			border:1px solid #FFEFEA;
+			border-radius:50%;
+			content:"";display:table;
+			width:200px;height:200px;margin:-161px auto 0;
+			
+		
+		}
+		
+		
+		#bottom{background:url(images/background_bottom.jpg) top center;height:500px;}
+</style>
+</head>
+
+<body>
+	<header><div class="qiTopLine"></div>
+    	<div class="qt">
+       		<ul class="cl">
+                <li><a href="#">Крамниця</a></li>
+                <li><a href="#">Меню</a></li>
+                <li><a href="#">Заходи</a></li>
+                <li><a href="#">Фототур</a></li>
+                <li class="fl_r"><a href="#">Мій Кошик</a></li>
+        	</ul>
+			<div class="qTitle">
+            	<h1>Львівська кав'ярня</h1>
+                <span>Ми знаэмо все про смак солодкого життя</span>
+            </div>
+            <section class="qTake">
+            	<img src="images/a.jpg">
+                <div>
+                	<h3>Вечір живої музики</h3>
+                    <p>В нас грають на піаніно, гітарі та блабла.Живий вокал. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodt empor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                    <p bold>Початок 18:00</p>
+                </div>
+            </section>
+        </div>
+    </header>
+    <div class="lace-top"></div>
+    <div id="logos"></div>
+	<section id="main">
+    	
+        
+    </section>
+	
+	<section id="bottom"><div class="lace-bot"></div>
+    
+    </section>
+</body>
+</html>
